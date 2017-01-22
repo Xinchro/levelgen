@@ -26047,19 +26047,19 @@ $__System.register('1a', ['5', '6', '16', '19'], function (_export) {
             camera.lookAt(new THREE.Vector3(0, 0, 0));
             scene = new THREE.Scene();
 
-            var light = new THREE.PointLight(0xff0000, 5, 1000);
+            var light = new THREE.PointLight(0x00ffdd, 1, 1000);
             light.position.set(250, 250, 250);
             scene.add(light);
 
-            var light2 = new THREE.PointLight(0xff0000, 2, 1000);
+            var light2 = new THREE.PointLight(0xffffff, 1, 1000);
             light2.position.set(-250, -250, -250);
             scene.add(light2);
 
-            var geometry = new THREE.BoxBufferGeometry(10, 10, 10);
+            var geometry = new THREE.SphereGeometry(5, 32, 16);
             var material = new THREE.MeshPhongMaterial({
               color: 0xdddddd,
-              specular: 0x009900,
-              shininess: 30,
+              // specular: 0x009900,
+              shininess: 100,
               shading: THREE.FlatShading
             });
             mesh = new THREE.Mesh(geometry, material);
