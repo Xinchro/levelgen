@@ -5,12 +5,14 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "grunt do"
+    "start": "grunt do",
+    "postinstall": "jspm install"
   },
   "author": "Xinchro",
   "license": "ISC",
   "dependencies": {
-    "three": "^0.84.0"
+    "three": "^0.84.0",
+    "three-orbit-controls": "^82.1.0"
   },
   "devDependencies": {
     "browser-sync": "^2.18.6",
@@ -22,7 +24,8 @@
   },
   "jspm": {
     "dependencies": {
-      "three": "npm:three@^0.84.0"
+      "three": "npm:three@^0.84.0",
+      "three-orbit-controls": "npm:three-orbit-controls@^82.1.0"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
