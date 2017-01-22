@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "grunt"
+    "start": "grunt do"
   },
   "author": "Xinchro",
   "license": "ISC",
@@ -21,7 +21,9 @@
     "jspm": "^0.16.48"
   },
   "jspm": {
-    "dependencies": {},
+    "dependencies": {
+      "three": "npm:three@^0.84.0"
+    },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
